@@ -1,0 +1,41 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/bingzhang/Desktop/finalProject/ --output-directory=C:/Users/bingzhang/Desktop/finalProject/music/ --report-file=bsf:C:/Users/bingzhang/Desktop/finalProject/music.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/bingzhang/Desktop/finalProject/music.qsys
+Progress: Loading finalProject/music.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding audio_0 [altera_up_avalon_audio 13.1]
+Progress: Parameterizing module audio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: music.audio_0: audio_0.avalon_audio_slave must be connected to an Avalon-MM master
+Warning: music.audio_0: Interrupt sender audio_0.interrupt is not connected to an interrupt receiver
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/bingzhang/Desktop/finalProject/ --output-directory=C:/Users/bingzhang/Desktop/finalProject/music/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:C:/Users/bingzhang/Desktop/finalProject/music.html --report-file=sopcinfo:C:/Users/bingzhang/Desktop/finalProject/music.sopcinfo --report-file=cmp:C:/Users/bingzhang/Desktop/finalProject/music.cmp --report-file=qip:C:/Users/bingzhang/Desktop/finalProject/music/synthesis/music.qip --report-file=svd --report-file=regmap:C:/Users/bingzhang/Desktop/finalProject/music/synthesis/music.regmap --report-file=debuginfo:C:/Users/bingzhang/Desktop/finalProject/music/synthesis/music.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/Users/bingzhang/Desktop/finalProject/music.qsys --language=VERILOG
+Progress: Loading finalProject/music.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.1]
+Progress: Parameterizing module clk_0
+Progress: Adding audio_0 [altera_up_avalon_audio 13.1]
+Progress: Parameterizing module audio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: music.audio_0: audio_0.avalon_audio_slave must be connected to an Avalon-MM master
+Warning: music.audio_0: Interrupt sender audio_0.interrupt is not connected to an interrupt receiver
+Info: music: Generating music "music" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 2 modules, 2 connections
+Info: No custom instruction connections, skipping transform 
+Info: reset_adaptation_transform: After transform: 3 modules, 4 connections
+Info: audio_0: Starting Generation of Audio Controller
+Info: audio_0: "music" instantiated altera_up_avalon_audio "audio_0"
+Info: rst_controller: "music" instantiated altera_reset_controller "rst_controller"
+Info: music: Done "music" with 3 modules, 10 files, 74245 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

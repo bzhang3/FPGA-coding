@@ -1,0 +1,14 @@
+
+State Machine - |music_top|Currentstate
+Name Currentstate.NoMusic Currentstate.Music Currentstate.Reset Currentstate.Idle Currentstate.Reset2 
+Currentstate.Idle 0 0 0 0 0 
+Currentstate.Reset 0 0 1 1 0 
+Currentstate.Music 0 1 0 1 0 
+Currentstate.NoMusic 1 0 0 1 0 
+Currentstate.Reset2 0 0 0 1 1 
+
+State Machine - |music_top|audio1:audiocontrol|I2C_AV_Config:u3|mSetup_ST
+Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
+mSetup_ST.0000 0 0 0 
+mSetup_ST.0001 1 0 1 
+mSetup_ST.0010 1 1 0 

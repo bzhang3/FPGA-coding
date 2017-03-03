@@ -1,0 +1,24 @@
+module music_top(input clk, input ADCDAT, inout ADCLRCK, inout DACLRCK, output DACDAT, inout BCLK);
+
+reg reset;
+
+initial begin
+	reset <= 0;
+end
+
+always @(posedge clk) begin
+	reset <= 1;
+end
+
+ music u0 (
+        .clk_clk                            (clk),                            //                        clk.clk
+        .reset_reset_n                      (reset),                      //                      reset.reset_n
+        .audio_0_external_interface_ADCDAT  (ADCDAT),  // audio_0_external_interface.ADCDAT
+        .audio_0_external_interface_ADCLRCK (ADCLRCK), //                           .ADCLRCK
+        .audio_0_external_interface_BCLK    (BCLK),    //                           .BCLK
+        .audio_0_external_interface_DACDAT  (DACDAT),  //                           .DACDAT
+        .audio_0_external_interface_DACLRCK (DACLRCK)  //                           .DACLRCK
+ );
+
+ endmodule
+ 

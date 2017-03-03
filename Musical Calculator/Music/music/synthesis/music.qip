@@ -1,0 +1,24 @@
+set_global_assignment -entity "music" -library "music" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "music" -library "music" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "music" -library "music" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "music" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../music.sopcinfo"]
+set_global_assignment -entity "music" -library "music" -name SLD_INFO "QSYS_NAME music HAS_SOPCINFO 1 GENERATION_ID 1417679360"
+set_global_assignment -library "music" -name MISC_FILE [file join $::quartus(qip_path) "../../music.cmp"]
+set_global_assignment -library "music" -name SLD_FILE [file join $::quartus(qip_path) "music.debuginfo"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "music" -name MISC_FILE [file join $::quartus(qip_path) "../../music.qsys"]
+
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "music.v"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "music" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_audio_bit_counter.v"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_audio_in_deserializer.v"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_audio_out_serializer.v"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_clock_edge.v"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_sync_fifo.v"]
+set_global_assignment -library "music" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/music_audio_0.v"]
+
+set_global_assignment -entity "altera_reset_controller" -library "music" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "music" -name IP_TOOL_VERSION "13.1"
+set_global_assignment -entity "altera_reset_controller" -library "music" -name IP_TOOL_ENV "Qsys"
